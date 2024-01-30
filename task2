@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .task {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task label {
+            margin-right: 10px;
+        }
+
+        .task input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .task .priority {
+            font-weight: bold;
+        }
+
+        .task .urgent {
+            color: red;
+        }
+
+        .task .important {
+            color: orange;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Task Manager</title>
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+
+    <main>
+        <div class="task">
+            <label for="task1">Design homepage</label>
+            <input type="checkbox" id="task1">
+            <span class="priority urgent">Urgent</span>
+            <span class="priority important">Important</span>
+            <span class="deadline">Deadline: Feb 15, 2024</span>
+        </div>
+
+        <div class="task">
+            <label for="task2">Implement login functionality</label>
+            <input type="checkbox" id="task2">
+            <span class="priority important">Important</span>
+            <span class="deadline">Deadline: Feb 10, 2024</span>
+        </div>
+
+        <div class="task">
+            <label for="task3">Write content for about page</label>
+            <input type="checkbox" id="task3">
+            <span class="priority">Normal</span>
+            <span class="deadline">Deadline: Feb 20, 2024</span>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Task Manager</p>
+    </footer>
+</body>
+</html>
